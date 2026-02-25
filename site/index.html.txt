@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quintal 155 | Restaurante</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+.topbar{
+background:#000;
+padding:10px;
+text-align:center;
+font-size:14px;
+color:#ff9500;
+}
+
+header{
+height:85vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:48px;
+color:#ff7b00;
+}
+
+header p{
+margin-top:10px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#ff7b00;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff9500;
+}
+
+section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#ff7b00;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1c1c1c;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#ff9500;
+margin-bottom:10px;
+}
+
+.price{
+color:#00ff88;
+font-weight:bold;
+margin:10px 0;
+}
+
+.order-btn{
+display:inline-block;
+padding:8px 15px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:20px;
+font-size:14px;
+}
+
+.info{
+background:#1a1a1a;
+padding:40px 20px;
+text-align:center;
+}
+
+iframe{
+width:100%;
+height:300px;
+border:none;
+border-radius:10px;
+margin-top:20px;
+}
+
+footer{
+background:#000;
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+@media(max-width:600px){
+header h1{
+font-size:34px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+📞 (55) 3221-5297 | Segunda a Sábado das 11h às 14h30
+</div>
+
+<header>
+<h1>Quintal 155</h1>
+<p>O sabor que reúne amigos 🍔🔥</p>
+<a href="#menu" class="btn">Ver Cardápio</a>
+</header>
+
+<section id="menu">
+<h2>🍔 Hambúrgueres</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Tradicional</h3>
+<p>Pão tradicional, hambúrguer bovino, alface, tomate e molho especial.</p>
+<p class="price">R$ 28,90</p>
+<a class="order-btn" href="https://wa.me/555532215297?text=Quero%20o%20Hambúrguer%20Tradicional" target="_blank">Pedir Agora</a>
+</div>
+
+<div class="card">
+<h3>Entrecot Grelhado</h3>
+<p>180g, gorgonzola, muçarela, rúcula e maionese verde.</p>
+<p class="price">R$ 39,90</p>
+<a class="order-btn" href="https://wa.me/555532215297?text=Quero%20o%20Entrecot%20Grelhado" target="_blank">Pedir Agora</a>
+</div>
+
+<div class="card">
+<h3>Costela 260g</h3>
+<p>Cheddar, mostarda com ervas, alface e bacon.</p>
+<p class="price">R$ 42,90</p>
+<a class="order-btn" href="https://wa.me/555532215297?text=Quero%20o%20Hambúrguer%20de%20Costela" target="_blank">Pedir Agora</a>
+</div>
+
+</div>
+</section>
+
+<section class="info">
+<h2>📍 Localização</h2>
+<p>R. Motorista Mariano, 155 - Nossa Sra. das Dores</p>
+<p>Santa Maria - RS, 97050-510</p>
+
+<iframe 
+src="https://www.google.com/maps?q=R.+Motorista+Mariano,+155+-+Nossa+Sra.+das+Dores,+Santa+Maria+-+RS&output=embed">
+</iframe>
+
+<h2 style="margin-top:40px;">💳 Formas de Pagamento</h2>
+<p>✔ PIX</p>
+<p>✔ Cartão de Crédito e Débito</p>
+<p>✔ Dinheiro</p>
+
+<h2 style="margin-top:40px;">📸 Redes Sociais</h2>
+<p><a href="#" style="color:#ff9500;text-decoration:none;">Instagram @quintal155</a></p>
+</section>
+
+<footer>
+<p>© 2026 Quintal 155 - Todos os direitos reservados</p>
+<p>📞 (55) 3221-5297</p>
+</footer>
+
+<a class="whatsapp" 
+href="https://wa.me/555532215297?text=Olá%20Quintal%20155,%20gostaria%20de%20fazer%20um%20pedido!" 
+target="_blank">
+WhatsApp
+</a>
+
+</body>
+</html>
